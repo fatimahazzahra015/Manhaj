@@ -40,7 +40,7 @@ const STYLES = `
   }
 
   .btn-whatsapp-nav:hover {
-    color: var(--primary-color) !important; /* Warna khas WA saat hover */
+    color: var(--neutral-dark) !important; /* Warna khas WA saat hover */
     transform: translateY(-1px);
     font-weight: 700;
   }
