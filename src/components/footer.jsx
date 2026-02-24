@@ -137,7 +137,7 @@ const Footer = () => {
       </div>
 
       <div className="bottom-bar py-4">
-        <div className="container-fluid">
+        <div className="container py-3">
           <div className="row align-items-center">
             
             <div className="col-12 col-md-4 d-flex gap-3 justify-content-center justify-content-md-start mb-4 mb-md-0">
