@@ -1,6 +1,6 @@
 import React from 'react';
-import HeroImage from '../assets/laptop.png';
-import Icon from '../assets/icon.png';
+import HeroImage from '../assets/Laptop.png';
+import Icon from '../assets/Icon.png';
 
 const STYLES = {
   section: { backgroundColor: '#F4F8FC' },
