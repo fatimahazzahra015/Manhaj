@@ -18,7 +18,7 @@ const STYLES = `
   .nav-link-custom {
     color: var(--neutral-medium);
     transition: color 0.2s ease, transform 0.2s ease;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   .nav-link-custom:hover {
@@ -35,7 +35,8 @@ const STYLES = `
   .btn-whatsapp-nav {
     color: var(--neutral-medium);
     text-decoration: none;
-    transition: color 0.2s ease;
+    font-weight: 400;
+    transition: color 0.2s easetransform 0.2s ease;
   }
 
   .btn-whatsapp-nav:hover {
@@ -75,9 +76,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom navbar-custom">
       <style>{STYLES}</style>
-      <div className="container py-2">
+      <div className="container py-3">
         
-        <a className="navbar-brand d-flex align-items-center" href="#beranda">
+        <a className="navbar-brand d-flex align-items-center px-1" href="#beranda">
           <img 
             src={LogoPrimary} 
             alt="Logo" 
@@ -94,7 +95,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className="collapse navbar-collapse px-3" id="navbarNav">
           
           <ul className="navbar-nav ms-lg-4 mb-2 mb-lg-0">
             {NAV_LINKS.map((link) => (

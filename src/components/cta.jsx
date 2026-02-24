@@ -42,7 +42,9 @@ const STYLES = {
     border: 'none',
     transition: 'all 0.3s ease',
     position: 'relative',
-    zIndex: 2
+    zIndex: 2,
+    width: '100%',
+    maxWidth: '300px'
   }
 };
 
@@ -55,7 +57,7 @@ const CtaBanner = () => {
   return (
     <section className="py-5">
       <div className="container px-4">
-        <div className="p-5 text-center shadow-lg" style={STYLES.banner}>
+        <div className="py-5 px-4 text-center shadow-lg" style={STYLES.banner}>
           <div className="position-relative" style={{ zIndex: 1 }}>
             
             <h2 className="mb-3 mx-auto" style={STYLES.title}>

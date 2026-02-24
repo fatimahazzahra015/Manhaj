@@ -19,7 +19,7 @@ const WHATSAPP_URL = "https://wa.me/00000000000";
 
 const STYLES = `
   .footer-wrapper { font-family: var(--font-main, sans-serif); }
-  .cta-container { background-color: #F4F8FC; }
+  .cta-container { background-color: #F4F8FC; padding-left: 1rem !important; padding-right: 1rem !important; }
   .cta-title {
     font-size: calc(1.8rem + 1.5vw);
     color: var(--neutral-dark);
@@ -27,7 +27,6 @@ const STYLES = `
     letter-spacing: -0.02em;
   }
 
-  /* WA Link Button Style */
   .btn-whatsapp {
     background-color: var(--primary-color);
     color: var(--neutral-dark) !important;
@@ -35,12 +34,12 @@ const STYLES = `
     height: 54px;
     border-radius: 50px;
     font-weight: 700;
-    display: inline-flex; /* Digunakan agar lebar sesuai 260px */
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 8px;
     transition: all 0.3s ease;
-    text-decoration: none; /* Menghilangkan underline default link */
+    text-decoration: none;
   }
   .btn-whatsapp:hover { 
     transform: translateY(-3px); 
@@ -59,7 +58,6 @@ const STYLES = `
   }
   .wa-icon-box i { color: var(--primary-color); font-size: 1.2rem; line-height: 0; }
 
-  /* Navigation */
   .footer-nav-item {
     color: var(--neutral-medium);
     font-weight: 700;
@@ -68,8 +66,7 @@ const STYLES = `
   }
   .footer-nav-item:hover { color: var(--primary-color); }
 
-  /* Bottom Bar */
-  .bottom-bar { background-color: var(--neutral-dark); }
+  .bottom-bar { background-color: var(--neutral-dark); padding-left: 1rem !important; padding-right: 1rem !important; }
   .copyright-text { color: var(--neutral-light); opacity: 0.8; }
   .legal-link {
     text-decoration: none;
@@ -79,7 +76,6 @@ const STYLES = `
   }
   .legal-link:hover { opacity: 1; }
 
-  /* Social Icons */
   .social-icon {
     width: 40px; height: 40px;
     background-color: white;
@@ -106,10 +102,10 @@ const SocialCircleIcon = ({ iconClass }) => (
 
 const Footer = () => {
   return (
-    <footer className="footer-wrapper w-100">
+    <footer className="footer-wrapper">
       <style>{STYLES}</style>
       
-      <div className="cta-container py-5 px-5">
+      <div className="cta-container py-5">
         <div className="container py-3">
           <h1 className="cta-title fw-bold mb-4">
             Mulai Transformasi <br /> KBIHU Sekarang!
@@ -140,21 +136,21 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bottom-bar py-4 px-5">
-        <div className="container">
+      <div className="bottom-bar py-4">
+        <div className="container-fluid">
           <div className="row align-items-center">
             
-            <div className="col-md-4 d-flex gap-3 justify-content-center justify-content-md-start mb-4 mb-md-0">
+            <div className="col-12 col-md-4 d-flex gap-3 justify-content-center justify-content-md-start mb-4 mb-md-0">
               {SOCIALS.map(icon => (
                 <SocialCircleIcon key={icon} iconClass={icon} />
               ))}
             </div>
 
-            <div className="col-md-4 text-center small mb-4 mb-md-0 copyright-text">
+            <div className="col-12 col-md-4 text-center small mb-4 mb-md-0 copyright-text">
               ©2025 Copyrights Inagata
             </div>
             
-            <div className="col-md-4 d-flex justify-content-center justify-content-md-end gap-4 small">
+            <div className="col-12 col-md-4 d-flex justify-content-center justify-content-md-end gap-4 small">
               {LEGAL_LINKS.map(link => (
                 <a key={link.label} href={link.href} className="legal-link">
                   {link.label}

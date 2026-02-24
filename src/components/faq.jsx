@@ -67,7 +67,7 @@ const STYLES = `
 `;
 
 const FaqItem = ({ id, question, answer }) => (
-  <div className="accordion-item border-0 border-bottom py-3 faq-item">
+  <div className="accordion-item border-0 border-bottom p-3 faq-item">
     <h2 className="accordion-header">
       <button 
         className="accordion-button collapsed px-0 bg-transparent shadow-none" 

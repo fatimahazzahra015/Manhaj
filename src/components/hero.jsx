@@ -55,7 +55,7 @@ const Hero = () => {
               {CONTENT.description}
             </p>
             <button 
-              className="btn btn-lg px-5 py-3 fw-bold shadow-sm" 
+              className="btn btn-lg fw-bold shadow-sm w-100 w-md-auto px-5 py-3" 
               style={STYLES.button}
               onMouseOver={(e) => e.target.style.transform = 'translateY(-2px)'}
               onMouseOut={(e) => e.target.style.transform = 'translateY(0)'}
