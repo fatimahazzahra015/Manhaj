@@ -4,7 +4,7 @@ import MonitoringImg from '../assets/Monitoring.png';
 import SistemImg from '../assets/Sistem.png'; 
 import DataIcon from '../assets/Icon data.png';
 import MonitoringIcon from '../assets/Icon monitoring.png';
-import SistemIcon from '../assets/Icon sistem.png';
+import SistemIcon from '../assets/Icon Sistem.png';
 
 const FEATURES = [
   {
