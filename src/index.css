@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./assets/fonts/3628-font.otf') format('opentype'); /* Sesuaikan path file kamu */
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  /* Primary (Hijau) */
+  --primary-color: #6CD3A3;
+  --primary-dark: #307B58;
+  --primary-light: #A7E4C5;
+
+  /* Secondary (Oranye) */
+  --secondary-color: #F7A300;
+  --secondary-dark: #966600;
+  --secondary-light: #FBCB6E;
+
+  /* Neutral (Gelap/Deep Navy) */
+  --neutral-dark: #12141D;
+  --neutral-medium: #4B4E5D;
+  --neutral-light: #D1D5DB;
+  --white: #FFFFFF;
+
+  /* Typography */
+  --font-main: 'Proxima Nova', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--neutral-dark);
+  background-color: var(--white);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-hover-effect:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
